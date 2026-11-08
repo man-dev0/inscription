@@ -126,7 +126,7 @@ function toggleMusic(on){playing=on;clearTimeout(timer);$('#music').textContent=
 $('#music').onclick=()=>toggleMusic(!playing);
 
 /* ---- étapes ---- */
-const nm=$('#name');[...'Thérèse'].forEach((ch,i)=>{const s=document.createElement('span');s.textContent=ch;s.style.animationDelay=(.6+i*.12)+'s,'+(1.8+i*.15)+'s';nm.appendChild(s)});
+const nm=$('#name');[...'Ma déesse de la Beauté'].forEach((ch,i)=>{const s=document.createElement('span');s.textContent=ch;s.style.animationDelay=(.6+i*.12)+'s,'+(1.8+i*.15)+'s';nm.appendChild(s)});
 const text="Aujourd'hui, c'est ton jour. Que cette nouvelle année t'apporte de la joie, de la lumière et tout ce que ton cœur désire. Merci d'être la personne que tu es. Fais un vœu…";
 let ballTimer;
 function balloons(){const b=document.createElement('div');b.className='balloon';const c=COL[Math.floor(Math.random()*5)];b.style.background=c;b.style.borderBottomColor=c;b.style.color=c;
